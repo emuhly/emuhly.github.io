@@ -2280,7 +2280,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 30px;
   border-radius: 25px;
   border: 1px solid transparent;
-  color: #fff;
+  color: #77d48f;
   display: inline-block;
   font-weight: 500;
   position: relative;
@@ -2297,7 +2297,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn span {
-  color: #fff;
+  color: #daedfd;
   position: absolute;
   top: 50%;
   transform: translateY(-60%);
