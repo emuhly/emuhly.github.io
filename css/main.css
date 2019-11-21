@@ -2404,8 +2404,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-btn:hover {
   border: 1px solid #fff;
-  background: transparent;
-  color: #fff !important;
+  background: #77d48f;
+  color: #000000 !important;
 }
 
 .single-product {
