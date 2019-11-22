@@ -1988,12 +1988,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-@media (max-width: 400px) { /*768*/
+@media (max-width: 768px) { 
   #header #logo h1 {
     font-size: 28px;
   }
   #header #logo img {
-    max-height: 40px;
+    max-height: 20px;
   }
 }
 
