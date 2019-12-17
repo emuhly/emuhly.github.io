@@ -1958,7 +1958,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: #daedfd;
+  background: #ead1cb;
   transition: all 0.5s;
 }
 
@@ -2404,7 +2404,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-btn:hover {
   border: 1px solid #fff;
-  background: #daedfd;
+  background: #ead1cb;
   color: #000000 !important;
 }
 
