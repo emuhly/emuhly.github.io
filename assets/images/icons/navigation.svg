@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>feather-icon/navigation</title>
+    <g id="feather-icon/navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Bounding-Box" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+        <path d="M10.1753789,13.8246211 L2.75746434,11.9701425 C1.84652506,11.7424077 1.72332664,10.4982244 2.57191362,10.0962622 L21.5719137,1.09626212 C22.4210889,0.694021228 23.3059788,1.5789111 22.9037379,2.4280863 L13.9037378,21.4280864 C13.5017756,22.2766734 12.2575923,22.1534749 12.0298575,21.2425357 L10.1753789,13.8246211 Z M5.9533489,10.7075608 L11.2425356,12.0298575 C11.6008208,12.1194288 11.8805712,12.3991792 11.9701425,12.7574644 L13.2924392,18.0466511 L19.8976204,4.10237957 L5.9533489,10.7075608 Z" id="Shape" fill="#000000"></path>
+    </g>
+</svg>

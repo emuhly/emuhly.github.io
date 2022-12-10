@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.001" viewBox="0 0 24 24.001">
+  <g id="Form_Elements_Checkbox_Default" data-name="Form Elements/Checkbox/Default" transform="translate(0)">
+    <path id="Form_Elements_Checkbox_Checked" data-name="Form Elements/Checkbox/Checked" d="M1.933,18.532A12,12,0,0,1,16.884,1.039,1.091,1.091,0,1,1,16,3.032a9.818,9.818,0,1,0,5.818,9.27l0-.3V11a1.091,1.091,0,0,1,2.175-.128L24,11v1A12,12,0,0,1,1.933,18.532Zm9.4-3.47-.1-.091L7.956,11.7A1.091,1.091,0,0,1,9.4,10.065l.1.091,2.5,2.5L22.137,2.508a1.091,1.091,0,0,1,1.634,1.439l-.091.1L12.772,14.971a1.091,1.091,0,0,1-1.44.091Z" transform="translate(0 0)" fill="#ff642f"/>
+  </g>
+</svg>

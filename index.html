@@ -1,566 +1,3489 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>NYC Treats</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="icon" href="/images/logonyctreats.png" type="image/png" sizes="16x16"/>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gourmet cookies baked with love in NYC">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Recipes Curated by Emily</title>
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <div id="preloader">
-        <i class="circle-preloader"></i>
-        <img src="img/logo.png" alt="">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script data-ad-client="ca-pub-4215714374883486" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <style>
+
+    #ac-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .6);
+        z-index: 1001;
+    }
+
+    #popup {
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background: #FFFFFF;
+        border: 5px solid #000;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        box-shadow: #64686e 0px 0px 3px 3px;
+        -moz-box-shadow: #64686e 0px 0px 3px 3px;
+        -webkit-box-shadow: #64686e 0px 0px 3px 3px;
+    }
+
+    .resize {
+      width: 35%;
+      height: auto;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Permanent+Marker&display=swap');
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="/index"><img width="90px" src="/images/logonyctreats.png"></a> -->
+        <center><img width="375px" src="/images/6.png"></center>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Info</button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <!-- <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="/index" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/nyctreats/" class="nav-link">Instagram</a></li>
+            <li class="nav-item cta"><a href="/menu" class="nav-link"><span>Menu</span></a></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-wrap js-fullheight">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          </div>
+        </div>
+      </div>
     </div>
-        <!-- Navbar Area -->
-        <div class="delicious-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
-                        <!-- Logo -->
-                        <a class="nav-brand" href="/"><img src="img/icon.png" style="width: 6%; height: auto;" alt="logo"></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
-                        <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                            </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li class="active"><a href="/">Home</a></li>
-                                    <!-- <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="blog-post.html">Blog Post</a></li>
-                                            <li><a href="receipe-post.html">Receipe Post</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="blog-post.html">Blog Post</a></li>
-                                                    <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                    <li><a href="#">Dropdown</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="index.html">Home</a></li>
-                                                            <li><a href="about.html">About Us</a></li>
-                                                            <li><a href="blog-post.html">Blog Post</a></li>
-                                                            <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                            <li><a href="contact.html">Contact</a></li>
-                                                            <li><a href="elements.html">Elements</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-                                    <li><a href="#">Recipes</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
-                                            </ul>
-                                            <div class="single-mega cn-col-4">
-                                                <div class="receipe-slider owl-carousel">
-                                                    <a href="#"><img src="img/bg-img/bg1.jpg" alt=""></a>
-                                                    <a href="#"><img src="img/bg-img/bg6.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <section class="ftco-section bg-light" id="menu-section">
+      <div class="container">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Signature Sets</h2>
+          </div>
         </div>
-    </header>
-    <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Hero Area Start ##### -->
-    <!-- <section class="hero-area">
-        <div class="hero-slides owl-carousel">
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg1.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
-                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <a class="block-20" style="background-image: url('images/chocolateset.jpg');"></a>
+              <div class="text p-4">
+                <h3 style="font-family: 'Montserrat', sans-serif;" class="heading"><center>Ultimate Chocolate Lovers</center></h3>
+                <div class="meta mb-3">
+                  <ul class="list-unstyled">
+                    <center><li style="color:#000" class="py-2 d-block" color="#e5a58e">S'mores</li>
+                    <li style="color:#000" class="py-2 d-block">White Chocolate Reese's Pieces</li>
+                    <li style="color:#000" class="py-2 d-block">OG Chocolate Chip</li>
+                    <li style="color:#000" class="py-2 d-block">Cookies n' Cream</li></center>
+                  </ul>
                 </div>
+                <center><div id='product-component-1606231162648'></div>
+                <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: 'nyctreats-co.myshopify.com',
+                      storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('product', {
+                        id: '6095209889981',
+                        node: document.getElementById('product-component-1606231162648'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                  "product": {
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "calc(25% - 20px)",
+                          "margin-left": "20px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "title": {
+                        "color": "#9d6b50"
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      },
+                      "price": {
+                        "color": "#0b0b0b"
+                      },
+                      "compareAt": {
+                        "color": "#0b0b0b"
+                      },
+                      "unitPrice": {
+                        "color": "#0b0b0b"
+                      },
+                      "description": {
+                        "color": "#282828"
+                      }
+                    },
+                    "contents": {
+                      "img": false,
+                      "title": false,
+                      "price": false
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
+                      }
+                    }
+                  },
+                  "modalProduct": {
+                    "contents": {
+                      "img": false,
+                      "imgWithCarousel": true,
+                      "button": false,
+                      "buttonWithQuantity": true
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      }
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "cart": {
+                    "styles": {
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "header": {
+                        "color": "#e6a78e"
+                      },
+                      "lineItems": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotalText": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotal": {
+                        "color": "#e6a78e"
+                      },
+                      "notice": {
+                        "color": "#e6a78e"
+                      },
+                      "currency": {
+                        "color": "#e6a78e"
+                      },
+                      "close": {
+                        "color": "#e6a78e",
+                        ":hover": {
+                          "color": "#e6a78e"
+                        }
+                      },
+                      "empty": {
+                        "color": "#e6a78e"
+                      },
+                      "noteDescription": {
+                        "color": "#e6a78e"
+                      },
+                      "discountText": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "discountAmount": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "text": {
+                      "total": "Subtotal",
+                      "button": "Checkout"
+                    },
+                    "popup": false
+                  },
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "background-color": "#fce7f1",
+                        ":hover": {
+                          "background-color": "#e3d0d9"
+                        },
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        }
+                      },
+                      "count": {
+                        "font-size": "18px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad"
+                        }
+                      },
+                      "iconPath": {
+                        "fill": "#ee76ad"
+                      }
+                    }
+                  },
+                  "lineItem": {
+                    "styles": {
+                      "variantTitle": {
+                        "color": "#e6a78e"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "price": {
+                        "color": "#e6a78e"
+                      },
+                      "fullPrice": {
+                        "color": "#e6a78e"
+                      },
+                      "discount": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "quantity": {
+                        "color": "#e6a78e"
+                      },
+                      "quantityIncrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityDecrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityInput": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      }
+                    }
+                  }
+                },
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+                </script></center>
+              </div>
             </div>
-
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg6.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
-                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="200">
+              <a class="block-20" style="background-image: url('images/circusset.jpg');"></a>
+              <div class="text p-4">
+                <h3 style="font-family: 'Montserrat', sans-serif;" class="heading"><center>Off To The Circus</center></h3>
+                <div class="meta mb-3">
+                  <ul class="list-unstyled">
+                    <center><li style="color:#000" class="py-2 d-block">Frosted Animal Cookie</li>
+                    <li style="color:#000" class="py-2 d-block">Dunkaroo</li>
+                    <li style="color:#000" class="py-2 d-block">Frosted Animal Cookie</li>
+                    <li style="color:#000" class="py-2 d-block">Dunkaroo</li>
+                  </ul>
                 </div>
+                <center><div id='product-component-1606231332458'></div>
+                <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: 'nyctreats-co.myshopify.com',
+                      storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('product', {
+                        id: '6095210840253',
+                        node: document.getElementById('product-component-1606231332458'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                  "product": {
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "calc(25% - 20px)",
+                          "margin-left": "20px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "title": {
+                        "color": "#9d6b50"
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      },
+                      "price": {
+                        "color": "#0b0b0b"
+                      },
+                      "compareAt": {
+                        "color": "#0b0b0b"
+                      },
+                      "unitPrice": {
+                        "color": "#0b0b0b"
+                      },
+                      "description": {
+                        "color": "#282828"
+                      }
+                    },
+                    "contents": {
+                      "img": false,
+                      "title": false,
+                      "price": false
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
+                      }
+                    }
+                  },
+                  "modalProduct": {
+                    "contents": {
+                      "img": false,
+                      "imgWithCarousel": true,
+                      "button": false,
+                      "buttonWithQuantity": true
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      }
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "cart": {
+                    "styles": {
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "header": {
+                        "color": "#e6a78e"
+                      },
+                      "lineItems": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotalText": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotal": {
+                        "color": "#e6a78e"
+                      },
+                      "notice": {
+                        "color": "#e6a78e"
+                      },
+                      "currency": {
+                        "color": "#e6a78e"
+                      },
+                      "close": {
+                        "color": "#e6a78e",
+                        ":hover": {
+                          "color": "#e6a78e"
+                        }
+                      },
+                      "empty": {
+                        "color": "#e6a78e"
+                      },
+                      "noteDescription": {
+                        "color": "#e6a78e"
+                      },
+                      "discountText": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "discountAmount": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "text": {
+                      "total": "Subtotal",
+                      "button": "Checkout"
+                    },
+                    "popup": false
+                  },
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "background-color": "#fce7f1",
+                        ":hover": {
+                          "background-color": "#e3d0d9"
+                        },
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        }
+                      },
+                      "count": {
+                        "font-size": "18px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad"
+                        }
+                      },
+                      "iconPath": {
+                        "fill": "#ee76ad"
+                      }
+                    }
+                  },
+                  "lineItem": {
+                    "styles": {
+                      "variantTitle": {
+                        "color": "#e6a78e"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "price": {
+                        "color": "#e6a78e"
+                      },
+                      "fullPrice": {
+                        "color": "#e6a78e"
+                      },
+                      "discount": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "quantity": {
+                        "color": "#e6a78e"
+                      },
+                      "quantityIncrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityDecrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityInput": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      }
+                    }
+                  }
+                },
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+                </script></center>
+              </div>
             </div>
-
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg7.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                            <div class="hero-slides-content" data-animation="fadeInUp" data-delay="100ms">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Delicios Homemade Burger</h2>
-                                <p data-animation="fadeInUp" data-delay="700ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nisl vitae luctus sollicitudin. Fusce consectetur sem eget dui tristique, ac posuere arcu varius.</p>
-                                <a href="#" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Receipe</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a class="block-20" style="background-image: url('images/whitechocolate.jpg');"></a>
+              <div class="text p-4 d-block">
+                <h3 style="font-family: 'Montserrat', sans-serif;" class="heading"><center>All About White Chocolate</center></h3>
+                <div class="meta mb-3">
+                  <ul class="list-unstyled">
+                    <center><li style="color:#000" class="py-2 d-block">Dunkaroo</li>
+                    <li style="color:#000" class="py-2 d-block">Frosted Animal Cookie</li>
+                    <li style="color:#000" class="py-2 d-block">Cookies n' Cream</li>
+                    <li style="color:#000" class="py-2 d-block">White Chocolate Reese's Pieces</li></center>
+                  </ul>
                 </div>
+                <center><div id='product-component-1606231298447'></div>
+                <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: 'nyctreats-co.myshopify.com',
+                      storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('product', {
+                        id: '6095214346429',
+                        node: document.getElementById('product-component-1606231298447'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                  "product": {
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "calc(25% - 20px)",
+                          "margin-left": "20px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "title": {
+                        "color": "#9d6b50"
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      },
+                      "price": {
+                        "color": "#0b0b0b"
+                      },
+                      "compareAt": {
+                        "color": "#0b0b0b"
+                      },
+                      "unitPrice": {
+                        "color": "#0b0b0b"
+                      },
+                      "description": {
+                        "color": "#282828"
+                      }
+                    },
+                    "contents": {
+                      "img": false,
+                      "title": false,
+                      "price": false
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
+                      }
+                    }
+                  },
+                  "modalProduct": {
+                    "contents": {
+                      "img": false,
+                      "imgWithCarousel": true,
+                      "button": false,
+                      "buttonWithQuantity": true
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px",
+                        "padding-left": "37px",
+                        "padding-right": "37px"
+                      },
+                      "quantityInput": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px"
+                      }
+                    },
+                    "text": {
+                      "button": "Add to Cart"
+                    }
+                  },
+                  "cart": {
+                    "styles": {
+                      "button": {
+                        "font-size": "18px",
+                        "padding-top": "17px",
+                        "padding-bottom": "17px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad",
+                          "background-color": "#e3d0d9"
+                        },
+                        "background-color": "#fce7f1",
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        },
+                        "border-radius": "40px"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "header": {
+                        "color": "#e6a78e"
+                      },
+                      "lineItems": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotalText": {
+                        "color": "#e6a78e"
+                      },
+                      "subtotal": {
+                        "color": "#e6a78e"
+                      },
+                      "notice": {
+                        "color": "#e6a78e"
+                      },
+                      "currency": {
+                        "color": "#e6a78e"
+                      },
+                      "close": {
+                        "color": "#e6a78e",
+                        ":hover": {
+                          "color": "#e6a78e"
+                        }
+                      },
+                      "empty": {
+                        "color": "#e6a78e"
+                      },
+                      "noteDescription": {
+                        "color": "#e6a78e"
+                      },
+                      "discountText": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "discountAmount": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "text": {
+                      "total": "Subtotal",
+                      "button": "Checkout"
+                    },
+                    "popup": false
+                  },
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "background-color": "#fce7f1",
+                        ":hover": {
+                          "background-color": "#e3d0d9"
+                        },
+                        ":focus": {
+                          "background-color": "#e3d0d9"
+                        }
+                      },
+                      "count": {
+                        "font-size": "18px",
+                        "color": "#ee76ad",
+                        ":hover": {
+                          "color": "#ee76ad"
+                        }
+                      },
+                      "iconPath": {
+                        "fill": "#ee76ad"
+                      }
+                    }
+                  },
+                  "lineItem": {
+                    "styles": {
+                      "variantTitle": {
+                        "color": "#e6a78e"
+                      },
+                      "title": {
+                        "color": "#e6a78e"
+                      },
+                      "price": {
+                        "color": "#e6a78e"
+                      },
+                      "fullPrice": {
+                        "color": "#e6a78e"
+                      },
+                      "discount": {
+                        "color": "#e6a78e"
+                      },
+                      "discountIcon": {
+                        "fill": "#e6a78e"
+                      },
+                      "quantity": {
+                        "color": "#e6a78e"
+                      },
+                      "quantityIncrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityDecrement": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      },
+                      "quantityInput": {
+                        "color": "#e6a78e",
+                        "border-color": "#e6a78e"
+                      }
+                    }
+                  }
+                },
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+                </script></center>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="top-catagory-area section-padding-80-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="single-top-catagory">
-                        <img src="img/bg-img/bg2.jpg" alt="">
-                        <div class="top-cta-content">
-                            <h3>Strawberry Cake</h3>
-                            <h6>Simple &amp; Delicios</h6>
-                            <a href="receipe-post.html" class="btn delicious-btn">See Full Receipe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="single-top-catagory">
-                        <img src="img/bg-img/bg3.jpg" alt="">
-                        <div class="top-cta-content">
-                            <h3>Chinesse Noodles</h3>
-                            <h6>Simple &amp; Delicios</h6>
-                            <a href="receipe-post.html" class="btn delicious-btn">See Full Receipe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Signature Flavors</h2>
+          </div>
         </div>
-    </section> -->
-
-    <section class="best-receipe-area">
-        <div class="container">
-            <!-- <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h3>Recipes</h3>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/bg-img/r1.jpg" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Cinnamon Rolls</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/index-food/biscuits.jpg" style="width: 805px; height: 325px;" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Biscuits</h5>
-                            </a>
-                            <!-- <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/index-food/monkeybreadmuffins.jpg" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Monkey Bread</h5>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/index-food/pumpkinloaf.jpg" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Pumpkin Loaf</h5>
-                            </a>
-                            <!-- <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/index-food/chocolatechipcookiecake.jpg" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Chocolate Chip Cookie Cake</h5>
-                            </a>
-                            <!-- <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-best-receipe-area mb-30">
-                        <img src="img/index-food/brownies.jpg" alt="">
-                        <div class="receipe-content">
-                            <a href="receipe-post.html">
-                                <h5>Brownies</h5>
-                            </a>
-                            <!-- <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/frostedcookie.png'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>Frosted Animal Cookie</a></h2>
+              <p>Sugar cookie stuffed with circus animal cookies, rainbow sprinkles, and nonpareil sprinkles. Topped with a dollop of vanilla funfetti frosting and a circus animal cookie.</p>
+              <center><div class="text-center" id='product-component-1605474990169'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                  } else {
+                    loadScript();
+                  }
+                } else {
+                  loadScript();
+                }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'nyctreats-co.myshopify.com',
+                    storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '6075757363389',
+                      node: document.getElementById('product-component-1605474990169'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "title": {
+                      "color": "#000000"
+                    },
+                    "button": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    },
+                    "price": {
+                      "color": "#0b0b0b"
+                    },
+                    "compareAt": {
+                      "color": "#0b0b0b"
+                    },
+                    "unitPrice": {
+                      "color": "#0b0b0b"
+                    },
+                    "description": {
+                      "color": "#282828"
+                    }
+                  },
+                  "contents": {
+                    "img": false,
+                    "button": false,
+                    "buttonWithQuantity": true,
+                    "title": false,
+                    "price": false
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-size": "16px",
+                      "padding-top": "16px",
+                      "padding-bottom": "16px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "header": {
+                      "color": "#e6a78e"
+                    },
+                    "lineItems": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotalText": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotal": {
+                      "color": "#e6a78e"
+                    },
+                    "notice": {
+                      "color": "#e6a78e"
+                    },
+                    "currency": {
+                      "color": "#e6a78e"
+                    },
+                    "close": {
+                      "color": "#e6a78e",
+                      ":hover": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "empty": {
+                      "color": "#e6a78e"
+                    },
+                    "noteDescription": {
+                      "color": "#e6a78e"
+                    },
+                    "discountText": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "discountAmount": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  },
+                  "popup": false
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "background-color": "#fce7f1",
+                      ":hover": {
+                        "background-color": "#e3d0d9"
+                      },
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      }
+                    },
+                    "count": {
+                      "font-size": "16px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#ee76ad"
+                    }
+                  }
+                },
+                "lineItem": {
+                  "styles": {
+                    "variantTitle": {
+                      "color": "#e6a78e"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "price": {
+                      "color": "#e6a78e"
+                    },
+                    "fullPrice": {
+                      "color": "#e6a78e"
+                    },
+                    "discount": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "quantity": {
+                      "color": "#e6a78e"
+                    },
+                    "quantityIncrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityDecrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityInput": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    }
+                  }
+                }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script></center>
             </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/animalcookies.png" alt=""/>
+                  <img class="small-img mb-2" src="images/sprinkles.png" alt=""/>
+                  <img class="small-img mb-2" src="images/nonpareils.png" alt=""/>
+                  <img class="small-img mb-2" src="images/funfetti.jpg" alt=""/>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/smorescookie.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>S'mores Cookie</a></h2>
+              <p>Milk chocolate chip cookie filled with graham crackers, mini marshmallows, and milk chocolate chips. Topped with a dollop of whipped vanilla frosting and Hershey's milk chocolate.</p>
+              <center><div id='product-component-1605499633024'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                  } else {
+                    loadScript();
+                  }
+                } else {
+                  loadScript();
+                }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'nyctreats-co.myshopify.com',
+                    storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '6075922677949',
+                      node: document.getElementById('product-component-1605499633024'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "title": {
+                      "color": "#9d6b50"
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    },
+                    "price": {
+                      "color": "#0b0b0b"
+                    },
+                    "compareAt": {
+                      "color": "#0b0b0b"
+                    },
+                    "unitPrice": {
+                      "color": "#0b0b0b"
+                    },
+                    "description": {
+                      "color": "#282828"
+                    }
+                  },
+                  "contents": {
+                    "img": false,
+                    "button": false,
+                    "buttonWithQuantity": true,
+                    "title": false,
+                    "price": false
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "header": {
+                      "color": "#e6a78e"
+                    },
+                    "lineItems": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotalText": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotal": {
+                      "color": "#e6a78e"
+                    },
+                    "notice": {
+                      "color": "#e6a78e"
+                    },
+                    "currency": {
+                      "color": "#e6a78e"
+                    },
+                    "close": {
+                      "color": "#e6a78e",
+                      ":hover": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "empty": {
+                      "color": "#e6a78e"
+                    },
+                    "noteDescription": {
+                      "color": "#e6a78e"
+                    },
+                    "discountText": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "discountAmount": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  },
+                  "popup": false
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "background-color": "#fce7f1",
+                      ":hover": {
+                        "background-color": "#e3d0d9"
+                      },
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      }
+                    },
+                    "count": {
+                      "font-size": "18px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#ee76ad"
+                    }
+                  }
+                },
+                "lineItem": {
+                  "styles": {
+                    "variantTitle": {
+                      "color": "#e6a78e"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "price": {
+                      "color": "#e6a78e"
+                    },
+                    "fullPrice": {
+                      "color": "#e6a78e"
+                    },
+                    "discount": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "quantity": {
+                      "color": "#e6a78e"
+                    },
+                    "quantityIncrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityDecrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityInput": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    }
+                  }
+                }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script></center>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/graham.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/marshmallows.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/hershey.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/creamcheese.jpg" alt=""/>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/reesespiecescookie.png'); " data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>White Chocolate Reese's Pieces Cookie</a></h2>
+              <p>White chocolate cookie filled with Reese's Pieces, white chocolate chips, and peanut butter chips. Topped with a dollop of whipped vanilla frosting and a Reese's Peanut Butter Cup.</p>
+            <center><div id='product-component-1605499546537'></div>
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'nyctreats-co.myshopify.com',
+                  storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '6075917566141',
+                    node: document.getElementById('product-component-1605499546537'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+              "product": {
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px"
+                    }
+                  },
+                  "title": {
+                    "color": "#9d6b50"
+                  },
+                  "button": {
+                    "font-size": "18px",
+                    "padding-top": "17px",
+                    "padding-bottom": "17px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px",
+                    "padding-left": "37px",
+                    "padding-right": "37px"
+                  },
+                  "quantityInput": {
+                    "font-size": "18px",
+                    "padding-top": "17px",
+                    "padding-bottom": "17px"
+                  },
+                  "price": {
+                    "color": "#0b0b0b"
+                  },
+                  "compareAt": {
+                    "color": "#0b0b0b"
+                  },
+                  "unitPrice": {
+                    "color": "#0b0b0b"
+                  },
+                  "description": {
+                    "color": "#282828"
+                  }
+                },
+                "contents": {
+                  "img": false,
+                  "button": false,
+                  "buttonWithQuantity": true,
+                  "title": false,
+                  "price": false
+                },
+                "text": {
+                  "button": "Add to Cart"
+                }
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "font-size": "18px",
+                    "padding-top": "17px",
+                    "padding-bottom": "17px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px",
+                    "padding-left": "37px",
+                    "padding-right": "37px"
+                  },
+                  "quantityInput": {
+                    "font-size": "18px",
+                    "padding-top": "17px",
+                    "padding-bottom": "17px"
+                  }
+                },
+                "text": {
+                  "button": "Add to Cart"
+                }
+              },
+              "cart": {
+                "styles": {
+                  "button": {
+                    "font-size": "18px",
+                    "padding-top": "17px",
+                    "padding-bottom": "17px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px"
+                  },
+                  "title": {
+                    "color": "#e6a78e"
+                  },
+                  "header": {
+                    "color": "#e6a78e"
+                  },
+                  "lineItems": {
+                    "color": "#e6a78e"
+                  },
+                  "subtotalText": {
+                    "color": "#e6a78e"
+                  },
+                  "subtotal": {
+                    "color": "#e6a78e"
+                  },
+                  "notice": {
+                    "color": "#e6a78e"
+                  },
+                  "currency": {
+                    "color": "#e6a78e"
+                  },
+                  "close": {
+                    "color": "#e6a78e",
+                    ":hover": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "empty": {
+                    "color": "#e6a78e"
+                  },
+                  "noteDescription": {
+                    "color": "#e6a78e"
+                  },
+                  "discountText": {
+                    "color": "#e6a78e"
+                  },
+                  "discountIcon": {
+                    "fill": "#e6a78e"
+                  },
+                  "discountAmount": {
+                    "color": "#e6a78e"
+                  }
+                },
+                "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                },
+                "popup": false
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "background-color": "#fce7f1",
+                    ":hover": {
+                      "background-color": "#e3d0d9"
+                    },
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    }
+                  },
+                  "count": {
+                    "font-size": "18px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad"
+                    }
+                  },
+                  "iconPath": {
+                    "fill": "#ee76ad"
+                  }
+                }
+              },
+              "lineItem": {
+                "styles": {
+                  "variantTitle": {
+                    "color": "#e6a78e"
+                  },
+                  "title": {
+                    "color": "#e6a78e"
+                  },
+                  "price": {
+                    "color": "#e6a78e"
+                  },
+                  "fullPrice": {
+                    "color": "#e6a78e"
+                  },
+                  "discount": {
+                    "color": "#e6a78e"
+                  },
+                  "discountIcon": {
+                    "fill": "#e6a78e"
+                  },
+                  "quantity": {
+                    "color": "#e6a78e"
+                  },
+                  "quantityIncrement": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  },
+                  "quantityDecrement": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  },
+                  "quantityInput": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  }
+                }
+              }
+            },
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script></center>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/reeses.png" alt=""/>
+                  <img class="small-img mb-2" src="images/whitechocochips.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/peanutchips.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/creamcheese.jpg" alt=""/>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/dunkarooscookie.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>Dunkaroo Cookie</a></h2>
+              <p>Sugar cookie filled with Dunkaroo vanilla cookies and funfetti white chocolate chips. Stuffed with funfetti frosting. Topped with a dollop of Dunkaroo funfetti frosting and a Dunkaroo cookie.</p>
+            <center><div id='product-component-1605477974670'></div>
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'nyctreats-co.myshopify.com',
+                  storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '6075911667901',
+                    node: document.getElementById('product-component-1605477974670'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+              "product": {
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px"
+                    }
+                  },
+                  "title": {
+                    "color": "#000000"
+                  },
+                  "button": {
+                    "font-size": "16px",
+                    "padding-top": "16px",
+                    "padding-bottom": "16px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px",
+                    "padding-left": "37px",
+                    "padding-right": "37px"
+                  },
+                  "quantityInput": {
+                    "font-size": "16px",
+                    "padding-top": "16px",
+                    "padding-bottom": "16px"
+                  },
+                  "price": {
+                    "color": "#0b0b0b"
+                  },
+                  "compareAt": {
+                    "color": "#0b0b0b"
+                  },
+                  "unitPrice": {
+                    "color": "#0b0b0b"
+                  },
+                  "description": {
+                    "color": "#282828"
+                  }
+                },
+                "contents": {
+                  "img": false,
+                  "button": false,
+                  "buttonWithQuantity": true,
+                  "title": false,
+                  "price": false
+                },
+                "text": {
+                  "button": "Add to Cart"
+                }
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "font-size": "16px",
+                    "padding-top": "16px",
+                    "padding-bottom": "16px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px",
+                    "padding-left": "37px",
+                    "padding-right": "37px"
+                  },
+                  "quantityInput": {
+                    "font-size": "16px",
+                    "padding-top": "16px",
+                    "padding-bottom": "16px"
+                  }
+                },
+                "text": {
+                  "button": "Add to Cart"
+                }
+              },
+              "cart": {
+                "styles": {
+                  "button": {
+                    "font-size": "16px",
+                    "padding-top": "16px",
+                    "padding-bottom": "16px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad",
+                      "background-color": "#e3d0d9"
+                    },
+                    "background-color": "#fce7f1",
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    },
+                    "border-radius": "40px"
+                  },
+                  "title": {
+                    "color": "#e6a78e"
+                  },
+                  "header": {
+                    "color": "#e6a78e"
+                  },
+                  "lineItems": {
+                    "color": "#e6a78e"
+                  },
+                  "subtotalText": {
+                    "color": "#e6a78e"
+                  },
+                  "subtotal": {
+                    "color": "#e6a78e"
+                  },
+                  "notice": {
+                    "color": "#e6a78e"
+                  },
+                  "currency": {
+                    "color": "#e6a78e"
+                  },
+                  "close": {
+                    "color": "#e6a78e",
+                    ":hover": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "empty": {
+                    "color": "#e6a78e"
+                  },
+                  "noteDescription": {
+                    "color": "#e6a78e"
+                  },
+                  "discountText": {
+                    "color": "#e6a78e"
+                  },
+                  "discountIcon": {
+                    "fill": "#e6a78e"
+                  },
+                  "discountAmount": {
+                    "color": "#e6a78e"
+                  }
+                },
+                "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                },
+                "popup": false
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "background-color": "#fce7f1",
+                    ":hover": {
+                      "background-color": "#e3d0d9"
+                    },
+                    ":focus": {
+                      "background-color": "#e3d0d9"
+                    }
+                  },
+                  "count": {
+                    "font-size": "16px",
+                    "color": "#ee76ad",
+                    ":hover": {
+                      "color": "#ee76ad"
+                    }
+                  },
+                  "iconPath": {
+                    "fill": "#ee76ad"
+                  }
+                }
+              },
+              "lineItem": {
+                "styles": {
+                  "variantTitle": {
+                    "color": "#e6a78e"
+                  },
+                  "title": {
+                    "color": "#e6a78e"
+                  },
+                  "price": {
+                    "color": "#e6a78e"
+                  },
+                  "fullPrice": {
+                    "color": "#e6a78e"
+                  },
+                  "discount": {
+                    "color": "#e6a78e"
+                  },
+                  "discountIcon": {
+                    "fill": "#e6a78e"
+                  },
+                  "quantity": {
+                    "color": "#e6a78e"
+                  },
+                  "quantityIncrement": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  },
+                  "quantityDecrement": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  },
+                  "quantityInput": {
+                    "color": "#e6a78e",
+                    "border-color": "#e6a78e"
+                  }
+                }
+              }
+            },
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script></center>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/dunkaroos.png" alt=""/>
+                  <img class="small-img mb-2" src="images/whitechocochips.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/sprinkles.png" alt=""/>
+                  <img class="small-img mb-2" src="images/funfetti.jpg" alt=""/>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/cookiescookie.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>Cookies n' Cream Cookie</a></h2>
+              <p>White chocolate cookie stuffed with Hershey's Cookies 'n' Creme chocolate and white chocolate chips. Topped with a dollop of whipped vanilla frosting and Hershey's Cookies 'n' Creme chocolate.</p>
+              <center><div id='product-component-1605499403072'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                  } else {
+                    loadScript();
+                  }
+                } else {
+                  loadScript();
+                }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'nyctreats-co.myshopify.com',
+                    storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '6075914256573',
+                      node: document.getElementById('product-component-1605499403072'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "title": {
+                      "color": "#9d6b50"
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    },
+                    "price": {
+                      "color": "#0b0b0b"
+                    },
+                    "compareAt": {
+                      "color": "#0b0b0b"
+                    },
+                    "unitPrice": {
+                      "color": "#0b0b0b"
+                    },
+                    "description": {
+                      "color": "#282828"
+                    }
+                  },
+                  "contents": {
+                    "img": false,
+                    "button": false,
+                    "buttonWithQuantity": true,
+                    "title": false,
+                    "price": false
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "header": {
+                      "color": "#e6a78e"
+                    },
+                    "lineItems": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotalText": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotal": {
+                      "color": "#e6a78e"
+                    },
+                    "notice": {
+                      "color": "#e6a78e"
+                    },
+                    "currency": {
+                      "color": "#e6a78e"
+                    },
+                    "close": {
+                      "color": "#e6a78e",
+                      ":hover": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "empty": {
+                      "color": "#e6a78e"
+                    },
+                    "noteDescription": {
+                      "color": "#e6a78e"
+                    },
+                    "discountText": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "discountAmount": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  },
+                  "popup": false
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "background-color": "#fce7f1",
+                      ":hover": {
+                        "background-color": "#e3d0d9"
+                      },
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      }
+                    },
+                    "count": {
+                      "font-size": "18px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#ee76ad"
+                    }
+                  }
+                },
+                "lineItem": {
+                  "styles": {
+                    "variantTitle": {
+                      "color": "#e6a78e"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "price": {
+                      "color": "#e6a78e"
+                    },
+                    "fullPrice": {
+                      "color": "#e6a78e"
+                    },
+                    "discount": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "quantity": {
+                      "color": "#e6a78e"
+                    },
+                    "quantityIncrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityDecrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityInput": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    }
+                  }
+                }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script></center>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/cookiesncreme.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/whitechocochips.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/minioreos.png" alt=""/>
+                  <img class="small-img mb-2" src="images/creamcheese.jpg" alt=""/>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+            <a class="image" style="background-image: url('images/ogchocochip.png');" data-scrollax=" properties: { translateY: '-20%'}"></a>
+            <div class="text">
+              <h2 class="heading"><a>OG Chocolate Chip Cookie</a></h2>
+              <p>Chocolate chip cookie filled with semi-sweet chocolate chips, chocolate chunks, and milk chocolate chips. Topped with a dollop of creamy & rich chocolate frosting and Hershey's milk chocolate.</p>
+              <center><div id='product-component-1605797667136'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                  } else {
+                    loadScript();
+                  }
+                } else {
+                  loadScript();
+                }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'nyctreats-co.myshopify.com',
+                    storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '6084787962045',
+                      node: document.getElementById('product-component-1605797667136'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "title": {
+                      "color": "#9d6b50"
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    },
+                    "price": {
+                      "color": "#0b0b0b"
+                    },
+                    "compareAt": {
+                      "color": "#0b0b0b"
+                    },
+                    "unitPrice": {
+                      "color": "#0b0b0b"
+                    },
+                    "description": {
+                      "color": "#282828"
+                    }
+                  },
+                  "contents": {
+                    "img": false,
+                    "button": false,
+                    "buttonWithQuantity": true,
+                    "title": false,
+                    "price": false
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px",
+                      "padding-left": "37px",
+                      "padding-right": "37px"
+                    },
+                    "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                    }
+                  },
+                  "text": {
+                    "button": "Add to Cart"
+                  }
+                },
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad",
+                        "background-color": "#e3d0d9"
+                      },
+                      "background-color": "#fce7f1",
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      },
+                      "border-radius": "40px"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "header": {
+                      "color": "#e6a78e"
+                    },
+                    "lineItems": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotalText": {
+                      "color": "#e6a78e"
+                    },
+                    "subtotal": {
+                      "color": "#e6a78e"
+                    },
+                    "notice": {
+                      "color": "#e6a78e"
+                    },
+                    "currency": {
+                      "color": "#e6a78e"
+                    },
+                    "close": {
+                      "color": "#e6a78e",
+                      ":hover": {
+                        "color": "#e6a78e"
+                      }
+                    },
+                    "empty": {
+                      "color": "#e6a78e"
+                    },
+                    "noteDescription": {
+                      "color": "#e6a78e"
+                    },
+                    "discountText": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "discountAmount": {
+                      "color": "#e6a78e"
+                    }
+                  },
+                  "text": {
+                    "total": "Subtotal",
+                    "button": "Checkout"
+                  },
+                  "popup": false
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "background-color": "#fce7f1",
+                      ":hover": {
+                        "background-color": "#e3d0d9"
+                      },
+                      ":focus": {
+                        "background-color": "#e3d0d9"
+                      }
+                    },
+                    "count": {
+                      "font-size": "18px",
+                      "color": "#ee76ad",
+                      ":hover": {
+                        "color": "#ee76ad"
+                      }
+                    },
+                    "iconPath": {
+                      "fill": "#ee76ad"
+                    }
+                  }
+                },
+                "lineItem": {
+                  "styles": {
+                    "variantTitle": {
+                      "color": "#e6a78e"
+                    },
+                    "title": {
+                      "color": "#e6a78e"
+                    },
+                    "price": {
+                      "color": "#e6a78e"
+                    },
+                    "fullPrice": {
+                      "color": "#e6a78e"
+                    },
+                    "discount": {
+                      "color": "#e6a78e"
+                    },
+                    "discountIcon": {
+                      "fill": "#e6a78e"
+                    },
+                    "quantity": {
+                      "color": "#e6a78e"
+                    },
+                    "quantityIncrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityDecrement": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    },
+                    "quantityInput": {
+                      "color": "#e6a78e",
+                      "border-color": "#e6a78e"
+                    }
+                  }
+                }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script></center>
+            </div>
+            <div class="item text-center">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="text">
+                  <p style="font-family: 'Montserrat', sans-serif;" class="name text-center">WHAT'S INSIDE</p>
+                </div>
+                  <img class="small-img mb-2" src="images/chocochips.png" alt=""/>
+                  <img class="small-img mb-2" src="images/chunks.png" alt=""/>
+                  <img class="small-img mb-2" src="images/hershey.jpg" alt=""/>
+                  <img class="small-img mb-2" src="images/nutella.png" alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- <section class="cta-area bg-img bg-overlay" style="background-image: url(img/bg-img/bg4.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="cta-content text-center">
-                        <h2>Gluten Free Receipies</h2>
-                        <p>Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh</p>
-                        <a href="#" class="btn delicious-btn">Discover all the receipies</a>
-                    </div>
-                </div>
-            </div>
+  <!--<section class="ftco-section-parallax">
+    <div class="parallax-img d-flex align-items-center">-->
+  <!--  <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Build Your Own Cookie</h2>
+            <p>No two cookies are the same, and we got your favorite. Chewy and soft or buttery and crispy, check out our options and build the cookie you're craving.</p>
+          </div>
         </div>
-    </section>
-
-    <section class="small-receipe-area section-padding-80-0">
-        <div class="container">
-            <div class="row">
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr1.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Homemade italian pasta</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr2.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Baked Bread</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr3.jpg" alt="">
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Scalops on salt</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr4.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Fruits on plate</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr5.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Macaroons</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr6.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Chocolate tart</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr7.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Berry Desert</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr8.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Zucchini Grilled on peper</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-small-receipe-area d-flex">
-
-                        <div class="receipe-thumb">
-                            <img src="img/bg-img/sr9.jpg" alt="">
-                        </div>
-
-                        <div class="receipe-content">
-                            <span>January 04, 2018</span>
-                            <a href="receipe-post.html">
-                                <h5>Chicken Salad</h5>
-                            </a>
-                            <div class="ratings">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                            </div>
-                            <p>2 Comments</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-3 d-flex justify-content-center mb-3"><span class="align-self-center icon-asterisk"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">The OG</h3>
+                <p>Our classic cookie, the perfect size with the perfect bite.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-1 d-flex justify-content-center mb-3"><span class="align-self-center icon-asterisk"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">The XL</h3>
+                <p>Big, giant cookies just taste better. These cookies are loaded with the filling of your choice, and are chewy and flavorful to no end.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-2 d-flex justify-content-center mb-3"><span class="align-self-center icon-asterisk"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">The Chewy</h3>
+                <p>Thin and chewy is what we're all about. These cookies melt in your mouth, with a chewy-ness out of this world.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon color-4 d-flex justify-content-center mb-3"><span class="align-self-center icon-asterisk"></span></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">The Thin & Crispy</h3>
+                <p>Brown buttered to perfection, these cookies have the perfect amount of thin and crisp. Need I say more?</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section> -->
+      </div>
+    </section>-->
 
+  <!--<section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Fillings</h2>
+            <p>You want it, we got it. View our fillings below.</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/animalcookies.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Frosted Animal Cookies</p>
+                    <p class="mb-4">Frosted pink and white animal-shaped sugar cookies with rainbow sprinkles</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/dunkaroos.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Dunkaroos</p>
+                    <p class="mb-4">Vanilla cookies and vanilla frosting with rainbow sprinkles</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/cookiesncreme.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Hershey's Cookies 'n' Creme</p>
+                    <p class="mb-4">Candy bar made with chocolate cookie bits and white creme</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/minimms.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Mini M&Ms</p>
+                    <p class="mb-4">Real milk chocolate surrounded by colorful candy shells</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/reeses.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Reese's Pieces</p>
+                    <p class="mb-4">Reese's peanut butter surrounded by colorful candy shells</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/sprinkles.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Sprinkles</p>
+                    <p class="mb-4">Colorful sprinkles for the perfect finishing touch</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/heath.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Heath Bar</p>
+                    <p class="mb-4">English toffee covered in a thick layer of smooth milk chocolate</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/andes.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Andes</p>
+                    <p class="mb-4">Green mint layer sandwiched between two cocoa-based layers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/mallo.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Mallo Cup</p>
+                    <p class="mb-4">Milk chocolate cup filled with whipped marshmallow</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/york.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">York Peppermint Pattie</p>
+                    <p class="mb-4">Dark chocolate pattie with a smooth pepperiment filling</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/minioreos.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Mini Oreos</p>
+                    <p class="mb-4">Oreo chocolate wafers filled with original Oreo creme</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/goldenoreos.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Golden Oreos</p>
+                    <p class="mb-4">Oreo golden cookies filled with original Oreo creme</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/graham.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Graham Crackers</p>
+                    <p class="mb-4">Sweet flavored crackers made with graham flour and honey</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/marshmallows.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Mini Marshmallows</p>
+                    <p class="mb-4">Bite sized marshmallows deliver a sweet taste and fluffy texture</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/chocochips.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Chocolate Chips</p>
+                    <p class="mb-4">Hershey's semi-sweet, milk, special dark, or sugar free chocolate chips</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/whitechocochips.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">White Chocolate Chips</p>
+                    <p class="mb-4">Hershey's premier white creme chocolate chips</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
 
-    <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
-</body>
+  <!--<section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Toppings</h2>
+            <p>Every cookie needs a creamy top. View our toppings below.</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/nutella.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Nutella</p>
+                    <p class="mb-4">Hazelnut spread with cocoa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/creamcheese.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Cream Cheese Frosting</p>
+                    <p class="mb-4">Creamy cream cheese frosting</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/marshmallowfluff.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Marshmallow Fluff</p>
+                    <p class="mb-4">Marshmallow fluff</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/peanutbutter.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Peanut Butter</p>
+                    <p class="mb-4">Creamy peanut butter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/funfetti.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-asterisk"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="name">Funfetti Frosting</p>
+                    <p class="mb-4">Vanilla frosting with sprinkles</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
 
+    <!--<section class="ftco-section ftco-counter" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Our achievements</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="400">0</strong>
+                <span>Customers are satisfied with our professional support</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Amazing preset options to be mixed and combined</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="8000">0</strong>
+                <span>Average response time on live chat support channel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 style="color:#f4d1c0; font-size: 20px;" class="ftco-heading-2">NYC Treats <span class="ftco-animate"><a href="https://www.instagram.com/nyctreats/" target="_blank"><span class="icon-instagram"></span></a></span></h2>
+              <p><a href="menu" class="py-2 d-block">Menu</a></p>
+              <p><a href="/policy" class="py-2 d-block">Shipping & Return Policy</a></p>
+              <p><a href="/about#partnerships">Partnerships</a></p>
+              <p><a href="/contact" class="py-2 d-block">Contact</a></p>
+            </div>
+          </div>
+            <div class="col-md">
+               <div class="ftco-footer-widget mb-4">
+                <h2 style="color:#f4d1c0; font-size: 20px;" class="ftco-heading-2">Gift Card</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="container-fluid" data-scrollax-parent="true">
+                      <div id='product-component-1605971895860'></div>
+                      <script type="text/javascript">
+                      /*<![CDATA[*/
+                      (function () {
+                        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                        if (window.ShopifyBuy) {
+                          if (window.ShopifyBuy.UI) {
+                            ShopifyBuyInit();
+                          } else {
+                            loadScript();
+                          }
+                        } else {
+                          loadScript();
+                        }
+                        function loadScript() {
+                          var script = document.createElement('script');
+                          script.async = true;
+                          script.src = scriptURL;
+                          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                          script.onload = ShopifyBuyInit;
+                        }
+                        function ShopifyBuyInit() {
+                          var client = ShopifyBuy.buildClient({
+                            domain: 'nyctreats-co.myshopify.com',
+                            storefrontAccessToken: 'b4988d95e4a3644e86b1790aa1c34056',
+                          });
+                          ShopifyBuy.UI.onReady(client).then(function (ui) {
+                            ui.createComponent('product', {
+                              id: '6075896234173',
+                              node: document.getElementById('product-component-1605971895860'),
+                              moneyFormat: '%24%7B%7Bamount%7D%7D',
+                              options: {
+                        "product": {
+                          "styles": {
+                            "product": {
+                              "@media (min-width: 601px)": {
+                                "max-width": "calc(25% - 20px)",
+                                "margin-left": "20px",
+                                "margin-bottom": "50px"
+                              }
+                            },
+                            "title": {
+                              "font-size": "0px",
+                              "color": "#9d6b50"
+                            },
+                            "button": {
+                              "font-size": "18px",
+                              "padding-top": "17px",
+                              "padding-bottom": "17px",
+                              "color": "#ee76ad",
+                              ":hover": {
+                                "color": "#ee76ad",
+                                "background-color": "#e3d0d9"
+                              },
+                              "background-color": "#fce7f1",
+                              ":focus": {
+                                "background-color": "#e3d0d9"
+                              },
+                              "border-radius": "40px",
+                              "padding-left": "37px",
+                              "padding-right": "37px"
+                            },
+                            "quantityInput": {
+                              "font-size": "18px",
+                              "padding-top": "17px",
+                              "padding-bottom": "17px"
+                            },
+                            "price": {
+                              "color": "#fff"
+                            },
+                            "compareAt": {
+                              "color": "#0b0b0b"
+                            },
+                            "unitPrice": {
+                              "color": "#0b0b0b"
+                            },
+                            "description": {
+                              "color": "#282828"
+                            }
+                          },
+                          "text": {
+                            "button": "Add to Cart"
+                          }
+                        },
+                        "productSet": {
+                          "styles": {
+                            "products": {
+                              "@media (min-width: 601px)": {
+                                "margin-left": "-20px"
+                              }
+                            }
+                          }
+                        },
+                        "modalProduct": {
+                          "contents": {
+                            "img": false,
+                            "imgWithCarousel": true,
+                            "button": false,
+                            "buttonWithQuantity": true
+                          },
+                          "styles": {
+                            "product": {
+                              "@media (min-width: 601px)": {
+                                "max-width": "100%",
+                                "margin-left": "0px",
+                                "margin-bottom": "0px"
+                              }
+                            },
+                            "button": {
+                              "font-size": "18px",
+                              "padding-top": "17px",
+                              "padding-bottom": "17px",
+                              "color": "#ee76ad",
+                              ":hover": {
+                                "color": "#ee76ad",
+                                "background-color": "#e3d0d9"
+                              },
+                              "background-color": "#fce7f1",
+                              ":focus": {
+                                "background-color": "#e3d0d9"
+                              },
+                              "border-radius": "40px",
+                              "padding-left": "37px",
+                              "padding-right": "37px"
+                            },
+                            "quantityInput": {
+                              "font-size": "18px",
+                              "padding-top": "17px",
+                              "padding-bottom": "17px"
+                            }
+                          },
+                          "text": {
+                            "button": "Add to Cart"
+                          }
+                        },
+                        "cart": {
+                          "styles": {
+                            "button": {
+                              "font-size": "18px",
+                              "padding-top": "17px",
+                              "padding-bottom": "17px",
+                              "color": "#ee76ad",
+                              ":hover": {
+                                "color": "#ee76ad",
+                                "background-color": "#e3d0d9"
+                              },
+                              "background-color": "#fce7f1",
+                              ":focus": {
+                                "background-color": "#e3d0d9"
+                              },
+                              "border-radius": "40px"
+                            },
+                            "title": {
+                              "color": "#e6a78e"
+                            },
+                            "header": {
+                              "color": "#e6a78e"
+                            },
+                            "lineItems": {
+                              "color": "#e6a78e"
+                            },
+                            "subtotalText": {
+                              "color": "#e6a78e"
+                            },
+                            "subtotal": {
+                              "color": "#e6a78e"
+                            },
+                            "notice": {
+                              "color": "#e6a78e"
+                            },
+                            "currency": {
+                              "color": "#e6a78e"
+                            },
+                            "close": {
+                              "color": "#e6a78e",
+                              ":hover": {
+                                "color": "#e6a78e"
+                              }
+                            },
+                            "empty": {
+                              "color": "#e6a78e"
+                            },
+                            "noteDescription": {
+                              "color": "#e6a78e"
+                            },
+                            "discountText": {
+                              "color": "#e6a78e"
+                            },
+                            "discountIcon": {
+                              "fill": "#e6a78e"
+                            },
+                            "discountAmount": {
+                              "color": "#e6a78e"
+                            }
+                          },
+                          "text": {
+                            "total": "Subtotal",
+                            "button": "Checkout"
+                          }
+                        },
+                        "toggle": {
+                          "styles": {
+                            "toggle": {
+                              "background-color": "#fce7f1",
+                              ":hover": {
+                                "background-color": "#e3d0d9"
+                              },
+                              ":focus": {
+                                "background-color": "#e3d0d9"
+                              }
+                            },
+                            "count": {
+                              "font-size": "18px",
+                              "color": "#ee76ad",
+                              ":hover": {
+                                "color": "#ee76ad"
+                              }
+                            },
+                            "iconPath": {
+                              "fill": "#ee76ad"
+                            }
+                          }
+                        },
+                        "lineItem": {
+                          "styles": {
+                            "variantTitle": {
+                              "color": "#e6a78e"
+                            },
+                            "title": {
+                              "color": "#e6a78e"
+                            },
+                            "price": {
+                              "color": "#e6a78e"
+                            },
+                            "fullPrice": {
+                              "color": "#e6a78e"
+                            },
+                            "discount": {
+                              "color": "#e6a78e"
+                            },
+                            "discountIcon": {
+                              "fill": "#e6a78e"
+                            },
+                            "quantity": {
+                              "color": "#e6a78e"
+                            },
+                            "quantityIncrement": {
+                              "color": "#e6a78e",
+                              "border-color": "#e6a78e"
+                            },
+                            "quantityDecrement": {
+                              "color": "#e6a78e",
+                              "border-color": "#e6a78e"
+                            },
+                            "quantityInput": {
+                              "color": "#e6a78e",
+                              "border-color": "#e6a78e"
+                            }
+                          }
+                        }
+                      },
+                            });
+                          });
+                        }
+                      })();
+                      /*]]>*/
+                      </script>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+               <div class="ftco-footer-widget mb-4">
+                <h2 style="color:#f4d1c0; font-size: 20px;" class="ftco-heading-2">GET 10% OFF</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="container-fluid" data-scrollax-parent="true">
+                      <p>Get 10% off on orders $35+ using promo code <b>'GET10'</b></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="list-unstyled">
+              <center><li><img class="resize" src="/images/acceptedpayment.png"/></li></center>
+              <center><p style="font-size:12px"><!--Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.-->
+    &copy; NYC Treats <script>document.write(new Date().getFullYear());</script> | All Rights Reserved | <a href="/tsandcs">T&C's</a> | <a href="/privacy">Privacy Policy</a> | Template <!--<i class="icon-heart" aria-hidden="true"></i>--> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!--Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.--></p></center>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/agency.min.js"></script>
+
+  </body>
 </html>

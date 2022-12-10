@@ -1,0 +1,22 @@
+<svg id="Rating_Large" data-name="Rating/Large" xmlns="http://www.w3.org/2000/svg" width="96" height="16" viewBox="0 0 96 16">
+  <g id="feather-icon_star" data-name="feather-icon/star">
+    <rect id="Bounding_Box" data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"/>
+    <path id="Shape" d="M4.831,4.231,6.736.372a.667.667,0,0,1,1.2,0L9.837,4.231l4.26.623a.667.667,0,0,1,.369,1.137l-3.082,3,.727,4.241a.667.667,0,0,1-.967.7l-3.81-2-3.81,2a.667.667,0,0,1-.967-.7l.727-4.241L.2,5.991A.667.667,0,0,1,.571,4.854Z" transform="translate(0.666 0.667)" fill="#ff642f"/>
+  </g>
+  <g id="feather-icon_star-2" data-name="feather-icon/star" transform="translate(20)">
+    <rect id="Bounding_Box-2" data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"/>
+    <path id="Shape-2" data-name="Shape" d="M4.831,4.231,6.736.372a.667.667,0,0,1,1.2,0L9.837,4.231l4.26.623a.667.667,0,0,1,.369,1.137l-3.082,3,.727,4.241a.667.667,0,0,1-.967.7l-3.81-2-3.81,2a.667.667,0,0,1-.967-.7l.727-4.241L.2,5.991A.667.667,0,0,1,.571,4.854Z" transform="translate(0.666 0.667)" fill="#ff642f"/>
+  </g>
+  <g id="feather-icon_star-3" data-name="feather-icon/star" transform="translate(40)">
+    <rect id="Bounding_Box-3" data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"/>
+    <path id="Shape-3" data-name="Shape" d="M4.831,4.231,6.736.372a.667.667,0,0,1,1.2,0L9.837,4.231l4.26.623a.667.667,0,0,1,.369,1.137l-3.082,3,.727,4.241a.667.667,0,0,1-.967.7l-3.81-2-3.81,2a.667.667,0,0,1-.967-.7l.727-4.241L.2,5.991A.667.667,0,0,1,.571,4.854Z" transform="translate(0.666 0.667)" fill="#ff642f"/>
+  </g>
+  <g id="feather-icon_star-4" data-name="feather-icon/star" transform="translate(60)">
+    <rect id="Bounding_Box-4" data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"/>
+    <path id="Shape-4" data-name="Shape" d="M4.831,4.231,6.736.372a.667.667,0,0,1,1.2,0L9.837,4.231l4.26.623a.667.667,0,0,1,.369,1.137l-3.082,3,.727,4.241a.667.667,0,0,1-.967.7l-3.81-2-3.81,2a.667.667,0,0,1-.967-.7l.727-4.241L.2,5.991A.667.667,0,0,1,.571,4.854Z" transform="translate(0.666 0.667)" fill="#ff642f"/>
+  </g>
+  <g id="feather-icon_star-5" data-name="feather-icon/star" transform="translate(80)">
+    <rect id="Bounding_Box-5" data-name="Bounding Box" width="16" height="16" fill="rgba(255,255,255,0)"/>
+    <path id="Shape-5" data-name="Shape" d="M4.831,4.231,6.736.372a.667.667,0,0,1,1.2,0L9.837,4.231l4.26.623a.667.667,0,0,1,.369,1.137l-3.082,3,.727,4.241a.667.667,0,0,1-.967.7l-3.81-2-3.81,2a.667.667,0,0,1-.967-.7l.727-4.241L.2,5.991A.667.667,0,0,1,.571,4.854Z" transform="translate(0.666 0.667)" fill="#ff642f"/>
+  </g>
+</svg>
