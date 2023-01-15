@@ -21,7 +21,7 @@ particlesJS("particles-js", {
         "nb_sides": 5
       },
       "image": {
-        "src": "images/cookieicon.png",
+        "src": "images/cookielogos/icon.png",
         "width": 100,
         "height": 100
       }
