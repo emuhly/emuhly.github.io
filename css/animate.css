@@ -2115,7 +2115,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: flipOutY;
 }
 
-@-webkit-keyframes lightSpeedIn {
+@-webkit-keyframes lighteaspooneedIn {
   from {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -2141,7 +2141,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-@keyframes lightSpeedIn {
+@keyframes lighteaspooneedIn {
   from {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -2167,14 +2167,14 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
+.lighteaspooneedIn {
+  -webkit-animation-name: lighteaspooneedIn;
+  animation-name: lighteaspooneedIn;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
 
-@-webkit-keyframes lightSpeedOut {
+@-webkit-keyframes lighteaspooneedOut {
   from {
     opacity: 1;
   }
@@ -2186,7 +2186,7 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-@keyframes lightSpeedOut {
+@keyframes lighteaspooneedOut {
   from {
     opacity: 1;
   }
@@ -2198,9 +2198,9 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.lightSpeedOut {
-  -webkit-animation-name: lightSpeedOut;
-  animation-name: lightSpeedOut;
+.lighteaspooneedOut {
+  -webkit-animation-name: lighteaspooneedOut;
+  animation-name: lighteaspooneedOut;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
