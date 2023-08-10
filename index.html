@@ -6,6 +6,12 @@
   <title>Recipes Curated by Emily</title>
   <link rel="icon" href="assets/images/logos/el_logo.png" type="image/png" sizes="16x16"/>
   <link href="assets/css/tastebite-styles.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    @font-face {
+    font-family: Cangste;
+    src: url(Cangste.otf);
+    }
+  </style>
 </head>
 <body>
 <section class="tstbite-section p-0">
@@ -22,7 +28,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" id="RecipePage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span>CATEGORIES</span>
+                <span style="font-family: Cangste;">CATEGORIES</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="9.333" height="5.333" viewBox="0 0 9.333 5.333">
                   <path d="M1.138.2A.667.667,0,0,0,.2,1.138l4,4a.667.667,0,0,0,.943,0l4-4A.667.667,0,1,0,8.2.2L4.667,3.724Z"/>
                 </svg>
@@ -34,7 +40,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" id="Pages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span>RECIPES</span>
+                <span style="font-family: Cangste;">RECIPES</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="9.333" height="5.333" viewBox="0 0 9.333 5.333">
                   <path d="M1.138.2A.667.667,0,0,0,.2,1.138l4,4a.667.667,0,0,0,.943,0l4-4A.667.667,0,1,0,8.2.2L4.667,3.724Z"/>
                 </svg>
@@ -42,17 +48,17 @@
               <div class="dropdown-menu" aria-labelledby="Pages">
                 <a class="dropdown-item" href="/bars">Bars</a>
                 <a class="dropdown-item" href="/breads">Bread</a>
+                <a class="dropdown-item" href="/cakesandpies">Cakes/Pies</a>
                 <a class="dropdown-item" href="/cookies">Cookies</a>
-                <a class="dropdown-item" href="/gfdfentrees">GF/DF Entrees</a>
-                <a class="dropdown-item" href="/gfdfdesserts">GF/DF Desserts</a>
+                <a class="dropdown-item" href="/gfdfentrees">Entrees</a>
                 <a class="dropdown-item" href="/other">Other</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/popularrecipes">POPULAR</a>
+              <a style="font-family: Cangste;" class="nav-link" href="/popularrecipes">POPULAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/faves">FAVES</a>
+              <a style="font-family: Cangste;" class="nav-link" href="/faves">FAVES</a>
               </li>
           </ul>
         </div>
@@ -67,7 +73,7 @@
       </nav>
     </header>
 
-    <div class="card rounded-16 overflow-hidden border-0 bg-secondary mt-0 mt-md-4">
+    <!-- <div class="card rounded-16 overflow-hidden border-0 bg-secondary mt-0 mt-md-4">
       <div class="row g-0">
         <div class="col-lg-7">
           <img src="assets/images/food/cinnamonroll.JPG" class="w-100" >
@@ -84,6 +90,32 @@
             <h4 class="my-3">Cinnamon Rolls</h4>
             <p class="big pe-0 pe-md-5 pb-3 pb-sm-5 pb-lg-0">Fluffy dough, a rich cinnamon sugar filling, and a thick cream cheese frosting make for the most perfect cinnamon roll yet.</p>
             <a href="/cinnamonrolls" class="circle circle-lg tstbite-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.333" height="13.333" viewBox="0 0 13.333 13.333">
+                <path d="M6.077,13.089a.833.833,0,0,1,0-1.178L10.488,7.5H.833a.833.833,0,0,1,0-1.667h9.655L6.077,1.423A.834.834,0,0,1,7.256.244l5.829,5.83a.833.833,0,0,1,0,1.186L7.256,13.089a.834.834,0,0,1-1.179,0Z" fill="#ff642f"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="card rounded-16 overflow-hidden border-0 bg-secondary mt-0 mt-md-4">
+      <div class="row g-0">
+        <div class="col-lg-7">
+          <img src="assets/images/food/gfdfpeachpie.jpeg" class="w-100" >
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 p-md-5 d-flex flex-column justify-content-center h-100 position-relative">
+            <strong>
+              <svg data-name="feather-icon/trending-up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <rect data-name="Bounding Box" width="20" height="20" fill="rgba(255,255,255,0)"/>
+                <path d="M.244,11.423a.834.834,0,0,1,0-1.178L6.494,3.994a.834.834,0,0,1,1.178,0L11.25,7.571l5.9-5.9H14.167a.833.833,0,1,1,0-1.667h5A.833.833,0,0,1,20,.833v5a.834.834,0,0,1-1.667,0V2.845L11.839,9.339a.834.834,0,0,1-1.179,0L7.083,5.761l-5.66,5.661a.834.834,0,0,1-1.179,0Z" transform="translate(0 4.167)" fill="#ff642f"/>
+              </svg>
+              <span class="ms-2 caption font-weight-medium">100% would make this again</span>
+            </strong>
+            <h4 class="my-3">Peach Pie</h4>
+            <p class="big pe-0 pe-md-5 pb-3 pb-sm-5 pb-lg-0">Flaky pastry dough and a sweet peach filling come together to make the best peach pie yet.</p>
+            <a href="/gfdfpeachpie" class="circle circle-lg tstbite-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" width="13.333" height="13.333" viewBox="0 0 13.333 13.333">
                 <path d="M6.077,13.089a.833.833,0,0,1,0-1.178L10.488,7.5H.833a.833.833,0,0,1,0-1.667h9.655L6.077,1.423A.834.834,0,0,1,7.256.244l5.829,5.83a.833.833,0,0,1,0,1.186L7.256,13.089a.834.834,0,0,1-1.179,0Z" fill="#ff642f"/>
               </svg>
@@ -109,10 +141,20 @@
         <div class="col-lg-2 col-md-4 col-4">
           <figure class="my-3 text-center tstbite-card">
             <a href="/breads" class="tstbite-animation stretched-link rounded-circle">
-              <img src="assets/images/food/breadsicon.jpeg" class="rounded-circle" >
+              <img src="assets/images/food/biscuitsicon.png" class="rounded-circle" >
             </a>
             <figcaption class="mt-2">
               <a href="/breads" class="tstbite-category-title">Bread</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-2 col-md-4 col-4">
+          <figure class="my-3 text-center tstbite-card">
+            <a href="/cakesandpies" class="tstbite-animation stretched-link rounded-circle">
+              <img src="assets/images/food/gfdfdicon.png" class="rounded-circle" >
+            </a>
+            <figcaption class="mt-2">
+              <a href="/cakesandpies" class="tstbite-category-title">Cakes/Pies</a>
             </figcaption>
           </figure>
         </div>
@@ -132,17 +174,7 @@
               <img src="assets/images/food/savoryicon.png" class="rounded-circle" >
             </a>
             <figcaption class="mt-2">
-              <a href="/gfdf" class="tstbite-category-title">GF/DF Entrees</a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-lg-2 col-md-4 col-4">
-          <figure class="my-3 text-center tstbite-card">
-            <a href="/gfdfdesserts" class="tstbite-animation stretched-link rounded-circle">
-              <img src="assets/images/food/gfdfdicon.png" class="rounded-circle" >
-            </a>
-            <figcaption class="mt-2">
-              <a href="/gfdfdesserts" class="tstbite-category-title">GF/DF Desserts</a>
+              <a href="/gfdf" class="tstbite-category-title">Entrees</a>
             </figcaption>
           </figure>
         </div>
@@ -164,31 +196,31 @@
       <div class="row">
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/gfdfpeachpie" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/gfdfpeachpie.jpeg" class="w-100">
+            <a href="/volcanosalmon" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/volcanosalmon.jpg" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/gfdfpeachpie" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Peach Pie</a>
+              <a href="/volcanosalmon" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Volcano Salmon</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/pumpkincookies" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/pumpkincookies.jpg" class="w-100">
+            <a href="/chocolateavocadocookies" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/chocolateavocadocookies.jpg" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/pumpkincookies" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Pumpkin Cookies</a>
+              <a href="/chocolateavocadocookies" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Chocolate Avocado Cookies</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/pumpkinbread" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/pumpkinloaf.png" class="w-100">
+            <a href="/gfdfbiscuits" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/biscuits.jpg" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/pumpkinbread" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Pumpkin Bread</a>
+              <a href="/gfdfbiscuits" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Biscuits</a>
             </figcaption>
           </figure>
         </div>
@@ -196,31 +228,31 @@
       <div class="row">
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/biscuits" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/biscuits.jpg" class="w-100">
+            <a href="/meatballs" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/meatballs.jpg" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/biscuits" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Biscuits</a>
+              <a href="/meatballs" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Meatballs</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/creampuffs" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/creampuffs.jpg" class="w-100">
+            <a href="/gfdfpumpkinbread" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/pumpkinloaf.png" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/creampuffs" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Cream Puffs</a>
+              <a href="/gfdfpumpkinbread" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Pumpkin Bread</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-md-4">
           <figure class="my-3 tstbite-card">
-            <a href="/baklava" class="tstbite-animation rounded-6">
-              <img src="assets/images/food/baklava.jpeg" class="w-100">
+            <a href="/brownies" class="tstbite-animation rounded-6">
+              <img src="assets/images/food/brownies.png" class="w-100">
             </a>
             <figcaption class="mt-2">
-              <a href="/baklava" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Baklava</a>
+              <a href="/brownies" class="f-size-20 text-black d-block mt-1 font-weight-semibold">Brownies</a>
             </figcaption>
           </figure>
         </div>
@@ -253,7 +285,7 @@
       </div>
     </div>
     
-    <section class="tstbite-components my-4 my-md-5">
+    <!-- <section class="tstbite-components my-4 my-md-5">
       <h5 class="py-3 mb-0">Favorite Spots</h5>
       <div class="row">
         <div class="col-lg-2 col-md-4 col-4">
@@ -285,7 +317,7 @@
               <a href="/bakeries" class="tstbite-category-title">Bakeries</a>
             </figcaption>
           </figure>
-        </div>
+        </div>-->
 
       <div class="bg-lightest-gray media-box mt-4 mb-md-4">
         <div class="media mb-4">
@@ -301,7 +333,7 @@
             </div>
           </div>
         </div>
-        <p class="big pe-0 pe-md-5 pb-3 pb-sm-5 pb-lg-0">Hi! Welcome to my digital cookbook, which I regularly update with my favorite recipes. Hope you enjoy.</p>
+        <p class="big pe-0 pe-md-5 pb-3 pb-sm-5 pb-lg-0">Hi! Welcome to my digital cookbook, which I regularly update with my favorite gluten free & dairy free recipes. Hope you enjoy.</p>
         <div class="tstbite-social my-4 my-md-0">
           <a href="https://www.instagram.com/nyctreats/">
             <svg data-name="feather-icon/instagram" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -310,17 +342,6 @@
             </svg>
           </a>
         </div>
-      </div>
-        <!-- <div class="col-lg-2 col-md-4 col-4">
-          <figure class="my-3 text-center tstbite-card">
-            <a href="/other" class="tstbite-animation stretched-link rounded-circle">
-              <img src="assets/images/food/other.png" class="rounded-circle" >
-            </a>
-            <figcaption class="mt-2">
-              <a href="/other" class="tstbite-category-title">Other</a>
-            </figcaption>
-          </figure>
-        </div> -->
       </div>
     </section>
   </div>
