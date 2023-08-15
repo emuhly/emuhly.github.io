@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Recipes Curated by Emily</title>
+  <link rel="icon" href="assets/images/logos/el_logo.png" type="image/png" sizes="16x16"/>
+  <link href="assets/css/tastebite-styles.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    @font-face {
+    font-family: Vogue;
+    src: url(/fonts/dafont/Vogue.ttf);
+    }
+    @font-face {
+    font-family: Belgiano;
+    src: url(/fonts/dafont/Belgiano.otf);
+    }
+    @font-face {
+    font-family: Cangste;
+    src: url(/fonts/dafont/Cangste.otf);
+    }
+    @font-face {
+    font-family: Catchye;
+    src: url(/fonts/dafont/Catchye.otf);
+    }
+    @font-face {
+    font-family: MADEVoyagerBold;
+    src: url(/fonts/dafont/MADEVoyagerBold.otf);
+    }
+    @font-face {
+    font-family: MADEVoyager;
+    src: url(/fonts/dafont/MADEVoyager.otf);
+    }
+    @font-face {
+    font-family: MADEVoyagerThin;
+    src: url(/fonts/dafont/MADEVoyagerThin.otf);
+    }
+    @font-face {
+    font-family: Nigante;
+    src: url(/fonts/dafont/Nigante.otf);
+    }
+  </style>
+</head>
+<body>
+  <section class="tstbite-section p-0">
+    <div class="container">
+      <header class="tstbite-header bg-white">
+        <nav class="navbar navbar-expand-lg has-header-inner px-0">
+          <a class="navbar-brand" href="https://emuhly.com">
+            <img src="assets/images/logos/emuhly.png" style="max-width: 125px;" >
+          </a>
+          <div class="collapse navbar-collapse" id="menu-4">
+            <ul class="navbar-nav m-auto pt-3 pt-lg-0">
+              <li class="nav-item">
+                <a style="font-family:MADEVoyager; font-size:16px;" class="nav-link" href="/">HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" id="RecipePage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span style="font-family:MADEVoyager; font-size:16px;">CATEGORIES</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9.333" height="5.333" viewBox="0 0 9.333 5.333">
+                    <path d="M1.138.2A.667.667,0,0,0,.2,1.138l4,4a.667.667,0,0,0,.943,0l4-4A.667.667,0,1,0,8.2.2L4.667,3.724Z"/>
+                  </svg>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="RecipePage">
+                  <a class="dropdown-item" href="/savory">Savory</a>
+                  <a class="dropdown-item" href="/sweet">Sweet</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" id="Pages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span style="font-family:MADEVoyager; font-size:16px;">RECIPES</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9.333" height="5.333" viewBox="0 0 9.333 5.333">
+                    <path d="M1.138.2A.667.667,0,0,0,.2,1.138l4,4a.667.667,0,0,0,.943,0l4-4A.667.667,0,1,0,8.2.2L4.667,3.724Z"/>
+                  </svg>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Pages">
+                  <a class="dropdown-item" href="/bars">Bars</a>
+                <a class="dropdown-item" href="/breads">Breads & Muffins</a>
+                <a class="dropdown-item" href="/cakesandpies">Cakes & Pies</a>
+                <a class="dropdown-item" href="/cookies">Cookies</a>
+                <a class="dropdown-item" href="/entrees">Entrees</a>
+                <a class="dropdown-item" href="/other">Other</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a style="font-family:MADEVoyager; font-size:16px;" class="nav-link" href="/popularrecipes">POPULAR</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-family:MADEVoyager; font-size:16px;" class="nav-link" href="/faves">FAVES</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tstbite-header-links d-flex align-items-center ms-auto order-0 order-lg-2">
+            <a href="/" class="ms-4 ms-md-4 me-2 me-md-0 circle"><img src="assets/images/logos/icon.png" alt="Avatar"></a>
+          </div>
+          <button class="navbar-toggler pe-0 ms-2 ms-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu-4" aria-controls="menu-4" aria-expanded="false" aria-label="Toggle navigation">
+            <svg data-name="Icon/Hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path data-name="Icon Color" d="M1.033,14a1.2,1.2,0,0,1-.409-.069.947.947,0,0,1-.337-.207,1.2,1.2,0,0,1-.216-.333,1.046,1.046,0,0,1-.072-.4A1.072,1.072,0,0,1,.072,12.6a.892.892,0,0,1,.216-.321.947.947,0,0,1,.337-.207A1.2,1.2,0,0,1,1.033,12H22.967a1.206,1.206,0,0,1,.409.069.935.935,0,0,1,.336.207.9.9,0,0,1,.217.321,1.072,1.072,0,0,1,.072.391,1.046,1.046,0,0,1-.072.4,1.206,1.206,0,0,1-.217.333.935.935,0,0,1-.336.207,1.206,1.206,0,0,1-.409.069Zm0-6a1.2,1.2,0,0,1-.409-.069.934.934,0,0,1-.337-.207,1.189,1.189,0,0,1-.216-.333A1.046,1.046,0,0,1,0,6.989,1.068,1.068,0,0,1,.072,6.6a.9.9,0,0,1,.216-.322.947.947,0,0,1,.337-.207A1.2,1.2,0,0,1,1.033,6H22.967a1.206,1.206,0,0,1,.409.068.935.935,0,0,1,.336.207.9.9,0,0,1,.217.322A1.068,1.068,0,0,1,24,6.989a1.046,1.046,0,0,1-.072.4,1.193,1.193,0,0,1-.217.333.923.923,0,0,1-.336.207A1.206,1.206,0,0,1,22.967,8Zm0-6a1.2,1.2,0,0,1-.409-.068.947.947,0,0,1-.337-.207,1.193,1.193,0,0,1-.216-.334A1.039,1.039,0,0,1,0,.988,1.068,1.068,0,0,1,.072.6.892.892,0,0,1,.288.276.934.934,0,0,1,.625.069,1.2,1.2,0,0,1,1.033,0H22.967a1.206,1.206,0,0,1,.409.069.923.923,0,0,1,.336.207A.9.9,0,0,1,23.928.6,1.068,1.068,0,0,1,24,.988a1.039,1.039,0,0,1-.072.4,1.2,1.2,0,0,1-.217.334.935.935,0,0,1-.336.207A1.206,1.206,0,0,1,22.967,2Z" transform="translate(0 5)" fill="#000"></path>
+            </svg>
+          </button>        
+        </nav>
+      </header>
+  </div>
+
+  <div class="container">
+    <section class="tstbite-components my-4 my-md-5">
+      <div class="d-sm-flex">
+        <div class="tstbite-svg order-sm-2 ms-auto">
+        </div>
+        <div>
+          <strong>
+            <svg data-name="feather-icon/trending-up" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <rect data-name="Bounding Box" width="20" height="20" fill="rgba(255,255,255,0)"></rect>
+              <path d="M.244,11.423a.834.834,0,0,1,0-1.178L6.494,3.994a.834.834,0,0,1,1.178,0L11.25,7.571l5.9-5.9H14.167a.833.833,0,1,1,0-1.667h5A.833.833,0,0,1,20,.833v5a.834.834,0,0,1-1.667,0V2.845L11.839,9.339a.834.834,0,0,1-1.179,0L7.083,5.761l-5.66,5.661a.834.834,0,0,1-1.179,0Z" transform="translate(0 4.167)" fill="#ff642f"></path>
+            </svg>
+            <span class="ms-2 caption font-weight-medium">100% would make this again</span>
+          </strong>
+          <h5 class="py-3 mb-0 h2">Bread Crumb Mustard Chicken</h5>
+          <div style="font-family:MADEVoyagerThin; font-size:15px;"><img src="assets/images/icons/gf.png" style="width:35px; height:35px"></div>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap">
+        <div class="my-2 me-4">
+          <small class="ps-1">Author: Malibu Farm</small>
+        </div>
+        <div class="my-2 me-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13.333" height="14.666" viewBox="0 0 13.333 14.666">
+            <path d="M2,14.666a2,2,0,0,1-2-2V3.333a2,2,0,0,1,2-2H3.334V.667a.667.667,0,0,1,1.333,0v.667h4V.667A.667.667,0,0,1,10,.667v.667h1.333a2,2,0,0,1,2,2v9.334a2,2,0,0,1-2,2Zm-.667-2A.667.667,0,0,0,2,13.333h9.334A.667.667,0,0,0,12,12.667v-6H1.333ZM12,5.333v-2a.667.667,0,0,0-.667-.667H10v.667a.667.667,0,0,1-1.334,0V2.666h-4v.667a.667.667,0,1,1-1.333,0V2.666H2a.667.667,0,0,0-.667.667v2Z"/>
+          </svg>
+          <small>August 15th, 2023</small>
+        </div>
+      </div>
+      <div class="blog-detail">
+        <hr>
+        <div class="rounded-12 overflow-hidden position-relative tstbite-svg">
+          <img src="assets/images/food/bcchicken.jpg" class="w-100" >
+        </div>
+        <br>
+        <div class="row mt-0 mt-md-5">
+          <div class="col-md-12">
+            <ul class="list-unstyled component-list tstbite-svg">
+              <li>
+                <small>Prep Time</small>
+                <span>10 minutes</span>
+              </li>
+              <li>
+                <small>Cook Time</small>
+                <span>40 to 45 minutes</span>
+              </li>
+              <li>
+                <small>Total Time</small>
+                <span>55 minutes</span>
+              </li>
+              <li>
+                <small>Serving</small>
+                <span>24 bars
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="mt-4 mt-md-5">
+              <h6>Ingredients</h6>
+              <div class="checklist pb-2">
+                <strong>Crust</strong>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="crackers">1 box gluten free vanilla or yellow cake mix</label>
+                </div>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="unsalted">1 stick of butter, room temperature</label>
+                </div>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="unsalted">1 large egg</label>
+                </div>
+              </div>
+              <div class="checklist pb-4">
+                <strong>Filling</strong>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="crackers">1 package (8oz) cream cheese, room temperature</label>
+                </div>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="unsalted">16oz powdered sugar</label>
+                </div>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="unsalted">2 large eggs</label>
+                </div>
+                <div class="form-check form-check-rounded recipe-checkbox">
+                  <input type="checkbox"  class="form-check-input">
+                  <label class="form-check-label" for="unsalted">1 teaspoon vanilla extract</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mt-5">
+              <h6>Instructions</h6>
+              <ul class="instruction-list list-unstyled">
+                <li>
+                  <span>1</span>
+                  Preheat oven to 325°F and prepare a 9x13-inch baking dish with non-stick cooking spray. Set aside.
+                </li>
+              </ul>
+              <ul class="instruction-list list-unstyled">
+                <li>
+                  <span>2</span>
+                  <b>For the crust: </b>Mix vanilla cake mix, butter, and egg in a large bowl with a fork until mixed together as thoroughly as possible. The texture of the mixture will be dry and clumpy.
+                </li>
+                <li>
+                  <span>3</span>
+                   Transfer the mixture to the greased pan. Press the mixture down with your hands, covering the bottom of the pan as well as slightly up the sides of the pan.
+                </li>
+              </ul>
+              <ul class="instruction-list list-unstyled">
+                <li>
+                  <span>4</span>
+                  <b>For the filling: </b>Set aside about 1/4 cup of the powdered sugar. In a large bowl, mix the softened cream cheese, eggs, and vanilla extract. Slowly add in the remaining powdered sugar while mixing. When you're done mixing, the filling should be nice and creamy.
+                </li>
+              </ul>
+              <ul class="instruction-list list-unstyled">
+                <li>
+                  <span>5</span>
+                  <b>To assemble: </b>Pour the filling over the crust in the pan. Bake for 40 to 45 minutes, or until the top is golden brown.
+                </li>
+                <li>
+                  <span>6</span>
+                  Remove the bars from the oven and let them cool. The filling will appear puffy, but will settle upon cooling. After about 10 minutes or so, sprinkle the remaining 1/4 cup powdered sugar over the top. Cool completely before serving.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="tstbite-components my-4 my-md-5">
+    <div class="row">
+      <div class="col-md-4">
+        <figure class="my-3 tstbite-card">
+          <img src="assets/images/food/kimchifriedrice.jpg" class="w-100" alt="Kimchi Fried Rice">
+        </figure>
+      </div>
+       <div class="col-md-4">
+        <figure class="my-3 tstbite-card">
+          <img src="assets/images/food/kimchifriedrice.jpg" class="w-100" alt="Kimchi Fried Rice">
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="my-3 tstbite-card">
+          <img src="assets/images/food/kimchifriedrice.jpg" class="w-100" alt="Kimchi Fried Rice">
+        </figure>
+      </div>
+    </div>
+
+  <footer class="tstbite-footer pt-3 pt-md-5 mt-5 bg-lightest-gray">
+    <div class="container">
+    </div>
+  </footer>
+</section>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/html5.min.js"></script>
+<script src="assets/js/sticky.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/masonry.min.js"></script>
+<script src="assets/js/tastebite-scripts.js"></script>
+</body>
+</html>
