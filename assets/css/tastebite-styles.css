@@ -8595,22 +8595,22 @@ h1, .h1, .h1, h2, .h2, .h2, h3, .h3, .h3, h4, .h4, .h4, h5, .h5, .h5, h6, .h6, .
   font-family: "Playfair Display", serif; }
 
 .font-weight-medium {
-  font-weight: 500 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-regular {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-light {
-  font-weight: 300 !important; }
+  font-weight: 200 !important; }
 
 .font-weight-thin {
   font-weight: 100 !important; }
 
 .font-weight-semibold {
-  font-weight: 600 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-bold {
-  font-weight: 700 !important; }
+  font-weight: 300 !important; }
 
 /* 2. 4. Tastebite Font Sizes CSS  */
 body, big.font-size-16, .font-size-16 {
